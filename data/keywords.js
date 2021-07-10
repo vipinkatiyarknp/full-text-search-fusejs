@@ -1,163 +1,218 @@
-const data = [
-    {
-      "title": "Old Man's War",
-      "description": {
+const data = [{
+    "title": "Old Man's War",
+    "description": {
         "firstName": "John",
         "lastName": "Scalzi"
-      }
     },
-    {
-      "title": "The Lock Artist",
-      "description": {
+    "keywords": [{
+            "keyword": "test",
+            "weight": 3
+        },
+        {
+            "keyword": "hello",
+            "weight": 1
+        },
+        {
+            "keyword": "random",
+            "weight": 3
+        }
+    ]
+}, {
+    "title": "The Lock Artist",
+    "description": {
         "firstName": "Steve",
         "lastName": "Hamilton"
-      }
+    },
+    "keywords": [{
+        "keyword": "test",
+        "weight": 2
     },
     {
-      "title": "HTML5",
-      "description": {
+        "keyword": "hello",
+        "weight": 2
+    },
+    {
+        "keyword": "random",
+        "weight": 3
+    }
+]
+},
+{
+    "title": "HTML5",
+    "description": {
         "firstName": "Remy",
         "lastName": "Sharp"
-      }
+    },
+    "keywords": [{
+        "keyword": "test",
+        "weight": 1
     },
     {
-      "title": "Right Ho Jeeves",
-      "description": {
+        "keyword": "hello",
+        "weight": 3
+    },
+    {
+        "keyword": "random",
+        "weight": 3
+    }
+]
+},
+{
+    "title": "Right Ho Jeeves",
+    "description": {
         "firstName": "P.D",
         "lastName": "Woodhouse"
-      }
     },
-    {
-      "title": "The Code of the Wooster",
-      "description": {
+    "keywords": []
+},
+{
+    "title": "The Code of the Wooster",
+    "description": {
         "firstName": "P.D",
         "lastName": "Woodhouse"
-      }
     },
-    {
-      "title": "Thank You Jeeves",
-      "description": {
+    "keywords": []
+},
+{
+    "title": "Thank You Jeeves",
+    "description": {
         "firstName": "P.D",
         "lastName": "Woodhouse"
-      }
     },
-    {
-      "title": "The DaVinci Code",
-      "description": {
+    "keywords": []
+},
+{
+    "title": "The DaVinci Code",
+    "description": {
         "firstName": "Dan",
         "lastName": "Brown"
-      }
     },
-    {
-      "title": "Angels & Demons",
-      "description": {
+    "keywords": []
+},
+{
+    "title": "Angels & Demons",
+    "description": {
         "firstName": "Dan",
         "lastName": "Brown"
-      }
     },
-    {
-      "title": "The Silmarillion",
-      "description": {
+    "keywords": []
+},
+{
+    "title": "The Silmarillion",
+    "description": {
         "firstName": "J.R.R",
         "lastName": "Tolkien"
-      }
     },
-    {
-      "title": "Syrup",
-      "description": {
+    "keywords": []
+},
+{
+    "title": "Syrup",
+    "description": {
         "firstName": "Max",
         "lastName": "Barry"
-      }
     },
-    {
-      "title": "The Lost Symbol",
-      "description": {
+    "keywords": []
+},
+{
+    "title": "The Lost Symbol",
+    "description": {
         "firstName": "Dan",
         "lastName": "Brown"
-      }
     },
-    {
-      "title": "The Book of Lies",
-      "description": {
+    "keywords": []
+},
+{
+    "title": "The Book of Lies",
+    "description": {
         "firstName": "Brad",
         "lastName": "Meltzer"
-      }
     },
-    {
-      "title": "Lamb",
-      "description": {
+    "keywords": []
+},
+{
+    "title": "Lamb",
+    "description": {
         "firstName": "Christopher",
         "lastName": "Moore"
-      }
     },
-    {
-      "title": "Fool",
-      "description": {
+    "keywords": []
+},
+{
+    "title": "Fool",
+    "description": {
         "firstName": "Christopher",
         "lastName": "Moore"
-      }
     },
-    {
-      "title": "Incompetence",
-      "description": {
+    "keywords": []
+},
+{
+    "title": "Incompetence",
+    "description": {
         "firstName": "Rob",
         "lastName": "Grant"
-      }
     },
-    {
-      "title": "Fat",
-      "description": {
+    "keywords": []
+},
+{
+    "title": "Fat",
+    "description": {
         "firstName": "Rob",
         "lastName": "Grant"
-      }
     },
-    {
-      "title": "Colony",
-      "description": {
+    "keywords": []
+},
+{
+    "title": "Colony",
+    "description": {
         "firstName": "Rob",
         "lastName": "Grant"
-      }
     },
-    {
-      "title": "Backwards, Red Dwarf",
-      "description": {
+    "keywords": []
+},
+{
+    "title": "Backwards, Red Dwarf",
+    "description": {
         "firstName": "Rob",
         "lastName": "Grant"
-      }
     },
-    {
-      "title": "The Grand Design",
-      "description": {
+    "keywords": []
+},
+{
+    "title": "The Grand Design",
+    "description": {
         "firstName": "Stephen",
         "lastName": "Hawking"
-      }
     },
-    {
-      "title": "The Book of Samson",
-      "description": {
+    "keywords": []
+},
+{
+    "title": "The Book of Samson",
+    "description": {
         "firstName": "David",
         "lastName": "Maine"
-      }
     },
-    {
-      "title": "The Preservationist",
-      "description": {
+    "keywords": []
+},
+{
+    "title": "The Preservationist",
+    "description": {
         "firstName": "David",
         "lastName": "Maine"
-      }
-    },
-    {
-      "title": "Fallen",
-      "description": {
-        "firstName": "David",
-        "lastName": "Maine"
-      }
-    },
-    {
-      "title": "Monster 1959",
-      "description": {
-        "firstName": "David",
-        "lastName": "Maine"
-      }
     }
-  ]
+},
+{
+    "title": "Fallen",
+    "description": {
+        "firstName": "David",
+        "lastName": "Maine"
+    },
+    "keywords": []
+},
+{
+    "title": "Monster 1959",
+    "description": {
+        "firstName": "David",
+        "lastName": "Maine"
+    }
+}
+]

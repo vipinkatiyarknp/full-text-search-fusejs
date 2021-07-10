@@ -6,7 +6,8 @@ const options = {
   keys: [
     { name: "title", weight: 3 },
     { name: "description.firstName", weight: 2 },
-    { name: "description.lastName", weight: 1 }
+    { name: "description.lastName", weight: 1 },
+    { name: "keywords.keyword", weight: 4 },
   ],
 };
 
@@ -41,7 +42,7 @@ sortByWeight = (searchRes, searchKeyword) => {
   searchRes.forEach((element) => {
     element.matches.forEach((match) => {
       if (
-        match.key === "keywordsWithWeight.keyword" &&
+        match.key === "keywords.keyword" &&
         (match.value.indexOf(searchKeyword.toLowerCase()) > -1 ||
           searchKeyword.indexOf(match.value.toLowerCase()) > -1)
       ) {
@@ -52,7 +53,7 @@ sortByWeight = (searchRes, searchKeyword) => {
   // console.log("searchRes>>>KEYWORDS", searchRes);
   searchRes.forEach((element) => {
     if (element.isMatchKeyword) {
-      element.item.keywordsWithWeight.forEach((item) => {
+      element.item.keywords.forEach((item) => {
         if (
           item.keyword.toLowerCase().indexOf(searchKeyword.toLowerCase()) >
             -1 ||
