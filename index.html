@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>Fuse js POC</title>
+
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+
+    .searches {
+      padding: 5px 0px 0px;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- your content here... -->
+  <div class="container-fluid">
+    <h1> Full text search POC (Fuse JS)</h1>
+    <input type="text" class="form-control" style="border-radius: 0px; width: 60%;height:35px;float: left;"
+      id="textSearch" placeholder="Please enter the search keywords">
+    <button class="btn btn-primary" style="margin-left: 10px;" onclick="clearSearch()">Clear search</button>
+    <script src="lib/fuje.js"></script>
+    <script src="./data/keywords.js"></script>
+    <script src="./lib/highlight.js"></script>
+    <script src="index.js"></script>
+    <div id="results"></div>
+  </div>
+</body>
+
+</html>
